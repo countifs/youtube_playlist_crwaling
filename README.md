@@ -1,6 +1,8 @@
 # youtube_playlist_crwaling
 유튜브 재생목록을 노션 또는 티스토리(블로그)에 복사-붙여넣기 위한 목적으로 `BeautifulSoup`을 이용하여 Youtube playlist를 크롤링하였고, `openpyxl`을 이용하여 제목에 url링크를 하이퍼링크로 연동한 결과를 엑셀 파일로 저장하는 코드입니다.
 
+## 1. 유튜브 재생목록 크롤링
+
 ```python
 # url 주소 입력
 url = input('유튜브 재생목록 주소를 입력하세요: ')
@@ -97,7 +99,12 @@ final_result.index = final_result.index + 1
 final_result
 ```
 
-```
+<br>
+
+
+## 2. openpyxl 하이퍼링크 기능 및 styles를 사용하여 엑셀 파일로 저장
+
+```python
 file_name = input("저장할 파일 이름을 입력하세요: ")
 
 from openpyxl import Workbook
